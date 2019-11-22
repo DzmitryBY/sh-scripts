@@ -39,10 +39,21 @@ function copy_as_last_year {
     echo "Files and folder copied witht the time stamp for 1 year ago"
 }
 
+function creating_tar {
+    tar -zcvf compressed.tar.gz ~/$folder1 ~/$folder2 ~/$folder3
+    echo "Folders compressed"
+}
+
 creating_test_env
 create_dir
+sleep 2
 copy_as_origin
+sleep 2
 copy_as_current
+sleep 2
 copy_as_last_year
+sleep 2
+creating_tar
+sleep 2
 
 echo "All is done. Ending."
