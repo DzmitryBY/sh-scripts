@@ -35,7 +35,7 @@ function copy_as_last_year {
     cp ~/test3 ~/$folder3/
     cp -r ~/$folder3"_3" ~/$folder3/
     touch -d "1 year ago" ~/$folder3/test3
-    touch -d "1 year ago" ~/$folder3
+    touch -d "1 year ago" ~/$folder3/$folder3"_3"/
     echo "Files and folder copied witht the time stamp for 1 year ago"
 }
 
